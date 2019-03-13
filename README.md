@@ -1,7 +1,7 @@
 
   <h1 align="center">
   <br>
-      <a href="https://github.com/BraveVladik/TechniMilonNew/blob/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png?raw=true" alt="TechniMilon" width="200"></a>
+      ![alt text](https://github.com/BraveVladik/TechniMilonNew/blob/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png)
   <br>
   TechniMilon
   <br>
