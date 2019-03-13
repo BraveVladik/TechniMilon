@@ -1,7 +1,7 @@
 
   <h1 align="center">
   <br>
-      ![alt text](https://github.com/BraveVladik/TechniMilonNew/blob/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png)
+    <img src="https://github.com/BraveVladik/TechniMilonNew/blob/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png?raw=true" width="220" height="220"/>
   <br>
   TechniMilon
   <br>
@@ -33,3 +33,9 @@ After approval, the word makes it's way to the master-list of words, ready to be
 
 ***
 ## Screenshots
+<span>
+  <img src="https://github.com/BraveVladik/TechniMilonNew/blob/master/screenshot_a.png?raw=true" width="200" height="400"/>
+  <img src="https://github.com/BraveVladik/TechniMilonNew/blob/master/screenshot_b.png?raw=true" width="200" height="400"/>
+  <img src="https://github.com/BraveVladik/TechniMilonNew/blob/master/screenshot_c.png?raw=true" width="200" height="400"/>
+  <img src="https://github.com/BraveVladik/TechniMilonNew/blob/master/screenshot_d.png?raw=true" width="200" height="400"/>
+ </span>
