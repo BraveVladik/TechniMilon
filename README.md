@@ -28,7 +28,7 @@ Technicians can suggest new words, and even fill some, if not all, data needed t
 By using a simple-to-use bottomsheet component, they can fill the "suggest a word" form swiftly.
 
 All suggested words are uploaded to a separate list in the database, waiting for admin approval.
-After approval, the word makes it's way to the master-list of words, ready to be queried and shown.
+After approval, the word makes its way to the master list of words, ready to be queried and shown.
 
 
 ***
@@ -55,7 +55,7 @@ As this project stopped because of my release from the army, the new recruiters 
 
 - [ ] Enhanced UI (which has been already designed, see screenshot below).
 - [ ] Auto-generated exams using the words, example sentences, and synonyms.
-- [ ] "Top Contributer" System - A scoreboard of the top contributors, by tracking "seen" and likes for each word.
+- [ ] "Top Contributor" System - A scoreboard of the top contributors, by tracking "seen" and likes for each word.
 - [ ] Alerts and the ability to sign up for English classes held at the base.
 
 ***
