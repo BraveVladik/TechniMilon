@@ -33,9 +33,29 @@ After approval, the word makes it's way to the master-list of words, ready to be
 
 ***
 ## Screenshots
-<span>
+<h1 align="center">
+  <br>
+   <span>
   <img src="https://github.com/BraveVladik/TechniMilonNew/blob/master/screenshot_a.png?raw=true" width="200" height="400"/>
   <img src="https://github.com/BraveVladik/TechniMilonNew/blob/master/screenshot_b.png?raw=true" width="200" height="400"/>
   <img src="https://github.com/BraveVladik/TechniMilonNew/blob/master/screenshot_c.png?raw=true" width="200" height="400"/>
   <img src="https://github.com/BraveVladik/TechniMilonNew/blob/master/screenshot_d.png?raw=true" width="200" height="400"/>
  </span>
+<br>
+<h4 align="center">New Design <br>
+<img src="https://github.com/BraveVladik/TechniMilonNew/blob/master/download.png?raw=true" width="200"/>
+</h4>
+  <br>
+</h1>
+
+ 
+***
+## TO-DO List
+As this project stopped because of my release from the army, the new recruiters will be adding the following content:
+
+- [ ] Enhanced UI (which has been already designed, see screenshot below).
+- [ ] Auto-generated exams using the words, example sentences, and synonyms.
+- [ ] "Top Contributer" System - A scoreboard of the top contributors, by tracking "seen" and likes for each word.
+- [ ] Alerts and the ability to sign up for English classes held at the base.
+
+***
