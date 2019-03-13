@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl">
+
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/wordprofile_tv_eng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+
+        android:text="''This is an example sentence for the above word.''"
+        android:textSize="22.5sp"
+        android:textColor="@color/colorWhite"
+        android:fontFamily="@font/secularone"
+        android:layout_alignParentEnd="true"
+        />
+
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/wordprofile_tv_heb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wordprofile_tv_eng"
+
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+
+        android:text="''זהו משפט דוגמא בעברית למילה המצוינת לעיל.''"
+        android:textSize="22.5sp"
+        android:textColor="@color/colorWhite"
+        android:fontFamily="@font/secularone"
+        android:layout_alignParentStart="true"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/wordprofile_tv_heb"
+
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        android:layerType="software"
+        android:background="@drawable/dotted"/>
+
+</RelativeLayout>

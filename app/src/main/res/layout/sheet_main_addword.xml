@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:layoutDirection="rtl"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/addword_topcircle"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/asset_maintoolbar"
+        android:rotation="180"
+        android:orientation="vertical">
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drw_handle"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/addword_topcircle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#18A0BC"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/secularone"
+        android:text="לא מוצאים מילה?"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp" />
+
+    <TextView
+
+        style="@style/style_bottomsheet_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="בואו להיות חלק מהמילון של המערך הטכני,\nוהוסיפו מילה חדשה!"
+        android:textAlignment="center"
+        android:layout_marginBottom="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:weightSum="6">
+
+        <TextView
+            style="@style/style_bottomsheet_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="המילה בעברית: "
+            android:textAlignment="viewEnd" />
+
+        <EditText
+            android:id="@+id/bottomsheet_wordHeb"
+            style="@style/style_bottomsheet_edittext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/stylesearchbox"
+            android:layout_weight="3.5" />
+
+        <android.support.v4.widget.Space
+            style="@style/style_bottomsheet_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <TextView
+            style="@style/style_bottomsheet_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="המילה באנגלית: "
+            android:textAlignment="viewEnd"
+            />
+
+        <EditText
+            android:id="@+id/bottomsheet_wordEng"
+            style="@style/style_bottomsheet_edittext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/stylesearchbox"
+            android:layout_weight="3.5" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:weightSum="6">
+
+        <TextView
+            style="@style/style_bottomsheet_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="משפט דוגמא בעברית: "
+            android:textAlignment="viewEnd" />
+
+        <EditText
+            android:id="@+id/bottomsheet_SentHeb"
+            style="@style/style_bottomsheet_edittext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/stylesearchbox"
+            android:layout_gravity="center"
+            android:maxLength="42"
+            android:textColor="@android:color/black"
+            android:layout_weight="3.5"
+            android:singleLine="true"/>
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <TextView
+            style="@style/style_bottomsheet_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="משפט דוגמא באנגלית: "
+            android:textAlignment="viewEnd" />
+
+        <EditText
+            android:id="@+id/bottomsheet_SentEng"
+            style="@style/style_bottomsheet_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/stylesearchbox"
+            android:maxLength="64"
+            android:textColor="@android:color/black"
+            android:layout_weight="3.5"
+            android:singleLine="true"/>
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <TextView
+            style="@style/style_bottomsheet_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="קישור לתמונה: "
+            android:textAlignment="viewEnd" />
+
+        <EditText
+            android:id="@+id/bottomsheet_ImageLink"
+            style="@style/style_bottomsheet_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/stylesearchbox"
+            android:textColor="@android:color/black"
+            android:layout_weight="3.5"
+            android:maxLength="120"
+            android:maxLines="1"/>
+
+        <ImageView
+            android:id="@+id/bottomsheet_img"
+            android:layout_width="25dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.5"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:weightSum="3">
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/bottomsheet_button"
+            style="@style/style_bottomsheet_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="הצע מילה חדשה"
+            android:textColor="@android:color/black"
+            android:layout_weight="1"
+            android:background="@drawable/stylesearchbox"
+            android:onClick="AddWord"/>
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

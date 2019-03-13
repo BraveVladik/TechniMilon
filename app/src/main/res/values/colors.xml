@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/tools">
+    <color name="colorPrimary">#18A0BC</color>
+    <color name="colorPrimaryDark">#0097A7</color>
+    <color name="colorAccent">#A1CAD6</color>
+
+    <!-- Basic Colors -->
+    <color name="colorWhite"> #ffffff</color>
+
+    <!--  New Search Menu Activity Colors -->
+    <color name="colorHardBlue">#0097A7</color>
+    <color name="colorMenuBlue">#18A0BC</color>
+    <color name="colorBackgroundBlue">#A1CAD6</color>
+    <color name="colorBackgroundBlueripple">#A1CAD6</color>
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="rtl"
+    android:gravity="bottom|center_horizontal"
+    android:weightSum="6">
+
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/wordprofile_tv_synonymheb"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+
+        android:layout_marginStart="25dp"
+        android:maxLines="1"
+        android:text="נרדפת"
+        android:textSize="22.5sp"
+        android:textColor="@color/colorWhite"
+        android:fontFamily="@font/secularone"
+        android:textAlignment="center"
+        android:layout_gravity="bottom|center_horizontal"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:layout_weight="2"
+        android:layerType="software"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@drawable/dotted"/>
+
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/wordprofile_tv_synonymeng"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+
+        android:layout_marginEnd="25dp"
+
+        android:text="Synonym"
+        android:maxLines="1"
+        android:textSize="22.5sp"
+        android:textColor="@color/colorWhite"
+        android:fontFamily="@font/secularone"
+        android:textAlignment="center"
+        android:layout_gravity="bottom|center_horizontal"
+        />
+
+</LinearLayout>

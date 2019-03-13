@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">טכני-מילון</string>
+
+
+    <!-- Main Layout Strings -->
+    <string name="string_tv_search">חיפוש</string>
+    <string name="string_et_hint">בדיקה</string>
+
+
+    <!-- Main Search Layout Strings -->
+    <string name="string_mainsearch_searchview_hint">לחץ כאן לחיפוש</string>
+</resources>

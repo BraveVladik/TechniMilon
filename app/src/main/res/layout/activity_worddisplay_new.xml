@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#18A0BC"
+    android:gravity="center_horizontal"
+    android:id="@+id/displayer_mainscroll">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#18A0BC">
+
+        <RelativeLayout
+            android:id="@+id/displayer_ttsholder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/displayer_tv_engmain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+
+
+                android:fontFamily="@font/secularone"
+                android:maxLines="1"
+                android:text="English Example"
+                android:textColor="@color/colorWhite"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/displayer_tv_hebmain"
+                android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_below="@id/displayer_tv_engmain"
+            android:layout_centerInParent="true"
+
+            android:fontFamily="@font/secularone"
+            android:maxLines="1"
+            android:text="דוגמא בעברית"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignBaseline="@id/displayer_tv_hebmain"
+            android:layout_toStartOf="@id/displayer_tv_hebmain"
+
+            app:srcCompat="@drawable/ic_tts" />
+
+        </RelativeLayout>
+
+
+        <FrameLayout
+            android:id="@+id/loadingPanel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/displayer_ttsholder"
+            android:layout_centerHorizontal="true"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/displayer_iv_img"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                android:scaleType="fitCenter"
+                />
+
+            <ProgressBar
+                android:id="@+id/displayer_imgload"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:indeterminate="true" />
+        </FrameLayout>
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/displayer_tv_titlesen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_below="@id/loadingPanel"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/secularone"
+            android:maxLines="1"
+            android:text="משפטי דוגמא:"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="30sp" />
+
+        <ListView
+            android:id="@+id/displayer_lv_sentences"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/displayer_tv_titlesen"
+
+            android:layout_marginTop="30dp"
+
+            tools:listitem="@layout/item_lv_sentence"
+            android:divider="@null"/>
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/displayer_tv_titlesyn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_below="@id/displayer_lv_sentences"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/secularone"
+            android:maxLines="1"
+            android:text="מילים נרדפות:"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="30sp" />
+
+        <ListView
+            android:id="@+id/displayer_lv_synonyms"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/displayer_tv_titlesyn"
+            android:dividerHeight="10.0sp"
+            android:layout_marginTop="30dp"
+            android:divider="@null"
+            tools:listitem="@layout/item_lv_synonym" />
+    </RelativeLayout>
+</ScrollView>

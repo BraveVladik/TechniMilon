@@ -1,0 +1,174 @@
+{
+  "project_info": {
+    "project_number": "200349080465",
+    "firebase_url": "https://technimilon.firebaseio.com",
+    "project_id": "technimilon",
+    "storage_bucket": "technimilon.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:200349080465:android:4a95d4fd5f5f0d1c",
+        "android_client_info": {
+          "package_name": "coldapp.giladpinker.technimilon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "200349080465-2j0koq0gvopquaj6pbi4fik8dalt67of.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACAwivk3W1IIMks3aw4yYThuHWUbig9Zk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:200349080465:android:a0f3ab7ec93bf9f0",
+        "android_client_info": {
+          "package_name": "coldapp.giladpinker.technimilonadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "200349080465-bj3s5sov4qtv5kg4bvf18ek7s3vo1b62.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "coldapp.giladpinker.technimilonadmin",
+            "certificate_hash": "9e7dbf333de13098654f30480169aa33bc68a113"
+          }
+        },
+        {
+          "client_id": "200349080465-2j0koq0gvopquaj6pbi4fik8dalt67of.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACAwivk3W1IIMks3aw4yYThuHWUbig9Zk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "200349080465-2j0koq0gvopquaj6pbi4fik8dalt67of.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:200349080465:android:83c19a44cc11daff",
+        "android_client_info": {
+          "package_name": "coldapp.giladpinker.technimilonnew"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "200349080465-nbgsdplsq2r70ravvqmi6i23g6vvstp0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "coldapp.giladpinker.technimilonnew",
+            "certificate_hash": "9e7dbf333de13098654f30480169aa33bc68a113"
+          }
+        },
+        {
+          "client_id": "200349080465-2j0koq0gvopquaj6pbi4fik8dalt67of.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACAwivk3W1IIMks3aw4yYThuHWUbig9Zk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "200349080465-2j0koq0gvopquaj6pbi4fik8dalt67of.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:200349080465:android:d761bf4321378fd7",
+        "android_client_info": {
+          "package_name": "coldapps.giladpinker.technimilon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "200349080465-f0iitp17i41a7uihrucoihljfmkk1u6g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "coldapps.giladpinker.technimilon",
+            "certificate_hash": "9e7dbf333de13098654f30480169aa33bc68a113"
+          }
+        },
+        {
+          "client_id": "200349080465-2j0koq0gvopquaj6pbi4fik8dalt67of.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACAwivk3W1IIMks3aw4yYThuHWUbig9Zk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "200349080465-2j0koq0gvopquaj6pbi4fik8dalt67of.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="false"
+    tools:context=".MainSearchActivity"
+    android:background="@color/colorBackgroundBlue">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        >
+
+
+        <android.support.constraint.Guideline
+            android:id="@+id/gdln_screen_15_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.12" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintGuide_percent="0.025"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintGuide_percent="0.975"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mainsearch_wordlist"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@+id/mainsearch_toolbarlayout"
+            android:layout_marginBottom="16dp"
+            android:paddingBottom="32dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorBackgroundBlue"
+            android:clipToPadding="false"
+            android:divider="@color/colorBackgroundBlue"
+            android:dividerHeight="30dp"
+            android:paddingTop="50dp"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline10"
+            app:layout_constraintStart_toStartOf="@+id/guideline9"
+            app:layout_constraintTop_toTopOf="@+id/gdln_screen_15_percent"
+            tools:listitem="@layout/item_result_word"
+            android:visibility="gone"/>
+
+
+        <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/coordinatorLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/addword_mainNested"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:behavior_peekHeight="50dp"
+                app:layout_behavior="@string/bottom_sheet_behavior"
+                android:layout_marginBottom="-140dp"
+                >
+
+
+                <include layout="@layout/sheet_main_addword"/>
+            </android.support.v4.widget.NestedScrollView>
+        </android.support.design.widget.CoordinatorLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/mainsearch_toolbarlayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+
+            app:layout_constraintBottom_toTopOf="@+id/gdln_screen_20_percent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|top"
+                android:scaleType="fitXY"
+                android:src="@drawable/asset_maintoolbar"
+                app:layout_constraintBottom_toBottomOf="@+id/mainsearch_tv_title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <android.support.v7.widget.SearchView
+                android:id="@+id/mainsearch_searchview"
+                android:layout_width="0dp"
+                android:layout_height="40sp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+
+                android:layout_marginTop="16dp"
+                android:background="@drawable/drw_top_searchview"
+                android:layoutDirection="rtl"
+                app:defaultQueryHint="@string/string_mainsearch_searchview_hint"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </android.support.v7.widget.SearchView>
+
+            <android.support.constraint.Barrier
+                android:id="@+id/barrier10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:barrierDirection="bottom"
+                app:constraint_referenced_ids="mainsearch_searchview"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextSwitcher
+                android:id="@+id/mainsearch_tv_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/secularone"
+                android:gravity="bottom|center_horizontal"
+                android:inAnimation="@android:anim/fade_in"
+                android:outAnimation="@android:anim/fade_out"
+                android:text="9 תוצאות"
+                android:textAlignment="gravity"
+                android:textColor="@color/colorWhite"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mainsearch_searchview" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.Guideline
+            android:id="@+id/gdln_screen_20_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.18" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</RelativeLayout>
