@@ -53,7 +53,7 @@ After approval, the word makes its way to the master list of words, ready to be 
 ## TO-DO List
 As this project stopped because of my release from the army, the new recruiters will be adding the following content:
 
-- [ ] Enhanced UI (which has been already designed, see screenshot below).
+- [ ] Enhanced UI (which has been already designed, see screenshot above).
 - [ ] Auto-generated exams using the words, example sentences, and synonyms.
 - [ ] "Top Contributor" System - A scoreboard of the top contributors, by tracking "seen" and likes for each word.
 - [ ] Alerts and the ability to sign up for English classes held at the base.
